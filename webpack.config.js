@@ -1,4 +1,4 @@
-const debug = process.env.NODE_ENV !== 'prod';
+const debug = process.env.NODE_ENV === 'prod';
 const webpack = require('webpack');
 
 module.exports = {
@@ -19,9 +19,7 @@ module.exports = {
     filename: './public/bundle.js'
   },
   plugins: debug ? [] : [
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({mangle: false, sourcemap: true}),
+    new webpack.optimize.UglifyJsPlugin({mangle: true, sourcemap: true}),
   ],
   devServer: {
     contentBase: "./public",
