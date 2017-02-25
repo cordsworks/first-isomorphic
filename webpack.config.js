@@ -23,4 +23,8 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({mangle: false, sourcemap: true}),
   ],
+  devServer: {
+    contentBase: "./public",
+    hot: true
+  },
 }
