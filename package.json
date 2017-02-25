@@ -1,0 +1,25 @@
+{
+  "name": "first-isomorphic",
+  "version": "1.0.0",
+  "description": "First Isomorphic Web App",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cordsworks/first-isomorphic.git"
+  },
+  "author": "Cord Hamrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cordsworks/first-isomorphic/issues"
+  },
+  "homepage": "https://github.com/cordsworks/first-isomorphic#readme"
+}
